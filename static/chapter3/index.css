@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-landing {
+  position: relative;
+  white-space: nowrap;
+}
+
+.main-landing .how-to {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-landing .arrow-main {
+  display: none;
+}
+
+.game-option {
+  position: relative;
+}
+
+.game-option .option-background {
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .game-option .option-background {
+    width: 100%;
+    background-image: radial-gradient(175% 57.77% at 50% 40%, rgba(255, 180, 52, 0) 0%, rgba(55, 44, 33, 0.1) 70%, #08090A 115%);
+  }
+}
+
+.game-option .wrapper-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .game-option .wrapper-game {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    -webkit-transform: translate(-10%, -10%);
+            transform: translate(-10%, -10%);
+  }
+}
+
+.game-option .carousel-view {
+  position: relative;
+}
+
+.game-option .carousel-view #carousel {
+  display: block;
+  margin: 0 auto;
+  width: 768px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .game-option .carousel-view #carousel {
+    max-width: 100%;
+    height: auto;
+    padding: 0 .75rem;
+  }
+}
+
+.game-option .carousel-view .dot-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.game-option .carousel-view .dot-wrapper .dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.game-option .carousel-view .dot-wrapper .active,
+.game-option .carousel-view .dot-wrapper .dot:hover {
+  background-color: #717171;
+}
+
+.game-feature {
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("./assets/features-widescreen.jpg");
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .game-feature {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .game-feature {
+    height: 130vh;
+  }
+}
+
+.game-feature span.line {
+  position: absolute;
+  height: 55.3%;
+  border: solid white 0.1em;
+  top: 0.6em;
+  left: 3.43em;
+}
+
+@media screen and (min-width: 401px) {
+  .game-feature span.line {
+    height: 52%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game-feature span.line {
+    left: 3.45em;
+    height: 51%;
+    border: solid white 0.1em;
+    top: 0.6em;
+  }
+}
+
+.game-requirement {
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url("./assets/requirements.png");
+  position: relative;
+}
+
+@media screen and (min-width: 414px) {
+  .game-requirement {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game-requirement {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .game-requirement {
+    height: 110vh;
+  }
+}
+
+.top-score {
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url("./assets/bg-top-score-wider.jpg");
+}
+
+@media screen and (min-width: 390px) {
+  .top-score {
+    height: 100vh;
+  }
+}
+
+.top-score .shadow-bg {
+  -webkit-box-shadow: 6px 1px #FFB548;
+          box-shadow: 6px 1px #FFB548;
+}
+
+@media screen and (min-width: 992px) {
+  .top-score .position-card {
+    position: absolute;
+    top: 90%;
+    left: -50%;
+  }
+  .top-score .position-card2 {
+    position: absolute;
+    top: 190%;
+    left: -10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+  }
+  nav li {
+    cursor: pointer;
+  }
+  .main-landing .arrow-main {
+    display: block;
+  }
+}
+
+.footer-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #080A0B;
+}
+
+.footer-section ::-webkit-input-placeholder {
+  color: orange;
+  opacity: 1;
+  /* Firefox */
+}
+
+.footer-section :-ms-input-placeholder {
+  color: orange;
+  opacity: 1;
+  /* Firefox */
+}
+
+.footer-section ::-ms-input-placeholder {
+  color: orange;
+  opacity: 1;
+  /* Firefox */
+}
+
+.footer-section ::placeholder {
+  color: orange;
+  opacity: 1;
+  /* Firefox */
+}
+
+.footer-section :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: orange;
+}
+
+.footer-section ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: orange;
+}
+
+.footer-section input, .footer-section span {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.footer-section hr {
+  margin: 0 20px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Augyeris Lioga Seandrio" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Pages Challange Chapter 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+    <nav class="bg-white border-gray-200 px-5 py-6 dark:bg-gray-900">
+      <div class="max-w-7xl my-1 mx-auto">
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <a href="#" class="text-white font-bold md:text-4xl"> Logo </a>
+          <!-- primary nav -->
+          <div class="hidden w-full md:block md:w-auto">
+            <ul class="flex mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
+                <li class="uppercase block py-2 pr-4 pl-3 text-white bg-orange-500 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white"><a href="/">Home </a></li>
+                <li class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <a href="#">Work</a></li>
+                <li class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <a href="#">Contact</a></li>
+                <li class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <a href="#">About Me</a></li>
+            </ul>
+        </div>
+          <!-- secondary nav -->
+          <div class="hidden w-full md:block md:w-auto">
+            <ul class="flex mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <a href="https://google.com">Sign Up</a></li>
+                <li class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <a href="https://google.com">Login</a></li>
+        </div>
+
+        <!-- mobile button goes here -->
+        <div class="md:hidden flex item-center text-white">
+          <button class="mobile-menu-button">
+            <i class="fa-solid fa-bars border rounded-lg p-2 border-orange-400"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden text-white">
+        <a href="/nav.html" class="block uppercase py-2 px-4 text-sm hover:bg-orange-500">Home</a>
+        <a href="/nav.html" class="block uppercase py-2 px-4 text-sm hover:bg-orange-500">Work</a>
+        <a href="/nav.html" class="block uppercase py-2 px-4 text-sm hover:bg-orange-500">Contact</a>
+        <a href="/nav.html" class="block uppercase py-2 px-4 text-sm hover:bg-orange-500">About Me</a>
+      </div>
+    </nav>
+    <!-- main landing view -->
+    <section class="main-landing" id="main-page">
+      <div class="md:spect-w-16 md:aspect-h-9">
+        <!-- add image -->
+        <img src="\assets\main-bg.jpg" alt="main background">
+      </div>
+      <!-- add content -->
+          <div class="how-to flex flex-col items-center">
+            <h1 class="mb-5 uppercase font-bold text-sm text-xl md:text-6xl text-neutral-50">Play Traditional Game</h1>
+            <h2 class="mb-5 font-medium text-sm text-m md:text-xl text-neutral-300">Experience new traditional game play</h2>
+            <button class="uppercase font-bold text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-sm w-30 md:w-48 px-2.5 md:px-5 py-2.5 text-center mr-2 mb-2">Play now</button>
+          </div>
+          <div class="arrow-main text-center font-medium mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 bottom-10">
+            <h5 class="flex flex-col uppercase text-white">the story <button><a class="fa-2xl fa-solid fa-caret-down fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 0.6; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 0.5; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1;" href="#game-option"></a></button></h5>
+          </div>
+      </section>
+      <!-- Game play option view -->
+    <section class="game-option" id="game-option">
+        <!-- set background image on img instead on section -->
+        <img class="option-background" src="./assets/the-games-bg-widescreen.jpg" alt="game option background">
+        <!-- primary game option content -->
+        <div class="wrapper-game flex flex-col md:flex-row items-center">
+          <div class="flex flex-col-reverse md:flex-col lg:mb-80 whitespace-nowrap">
+            <h4 class="text-slate-400 font-normal text-l md:text-xl pb-3">
+              What's so special ?
+            </h4>
+            <h3 class="uppercase text-2xl md:text-6xl text-white font-light md:tracking-wider">
+              the games
+            </h3>
+          </div>
+
+        <!-- carousel on game option -->
+            <div class="carousel-view px-8">
+              <div class="flex items-center">
+                <!-- left carret -->
+                <button> <i class="text-white fa-solid fa-caret-left fa-2xl px-2" onclick="plusSlides(-1)"></i></button>
+                  <div class="relative flex">
+                    <!-- image slide for carousel -->
+                    <div class="mySlides"><img src="./assets/rockpaperstrategy-1600.jpg" alt=""></div>
+                    <div class="mySlides"><img src="./assets/image1.png" alt=""></div>
+                    <div class="mySlides"><img src="./assets/image2.png" alt=""></div>
+                    <div class="mySlides"><img src="./assets/image3.png" alt=""></div>
+                    <div class="mySlides"><img src="./assets/image4.png" alt=""></div>
+                    <!-- create dot wrapper -->
+                    <div class="dot-wrapper text-center">
+                      <!-- create clickable dot -->
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                  </div>
+                  <!-- right carret -->
+                <button><i class="text-white fa-solid fa-caret-right fa-2xl px-2" onclick="plusSlides(1)"></i></button>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- Game feature landing view -->
+      <!-- set background on section -->
+    <section class="game-feature md:flex md:justify-end" id="feature-page">
+        <div class="grid-rows-4 grid-col-1 gap-5 md:px-24 pt-10 md:pt-40 flex flex-col items-center md:mt-24 md:items-start">
+        <!-- section heading for gane feature -->
+          <div class="text-center md:text-left">
+            <h4 class="text-slate-400 text-l md:text-2xl">What's so special ?</h4>
+            <h3 class="uppercase text-white text-2xl md:text-6xl md:pb-12">features</h3>
+          </div>
+          <!-- content wrapper -->
+          <div class="relative flex justify-start flex-col gap-12">
+            <span class="line"></span>
+            <div class="flex items-start px-12">
+              <img class="pt-2 pr-4" src="./assets/Ellipse1.svg" alt="bullet">
+              <div class="text-white">
+                <h4 class="pb-4 text-yellow-500 md:text-2xl">TRADITIONAL GAMES</h4>
+                <h5 class="md:text-xl">If you miss your childhood, we provide <br> many traditional games here</h5>
+              </div>
+            </div>
+            <div class="flex items-start px-12">
+              <img class="pt-2 pr-4" src="./assets/Ellipse.svg" alt="bullet">
+              <h4 class="pb-4 text-yellow-500 md:text-2xl">GAME SUIT</h4>
+            </div>
+            <div class="flex items-start px-12">
+              <img class="pt-2 pr-4" src="./assets/Ellipse.svg" alt="bullet">
+              <h4 class="pb-4 text-yellow-500 md:text-2xl">TBD</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Game Requirement section -->
+    <section class="game-requirement" id="requirement-page">
+      <!-- caption content -->
+      <h6 class="text-white text-center py-7 lg:pt-40">Can My Computer Run this game?</h6>
+      <!-- requirements content -->
+      <h2 class="uppercase text-xl md:text-6xl text-slate-300 text-center md:text-left pb-5 md:mb-10 lg:mx-20">system<br>requirements</h2>
+      <!-- table content -->
+        <table class="table-fixed mx-3 lg:mx-20">
+          <tbody>
+            <tr>
+              <td class="border border-slate-500 py-2 px-5"><div class="flex flex-col text-yellow-600 text-l md:text-xl">OS:
+                <span class="text-white text-sm md:text-l pb-4 ">Windows 7 64-bit only <br>(No OSX support at this time)
+                </span>
+              </div>
+            </td>
+              <td class="border border-slate-500 py-2 px-5"><div class="flex flex-col text-yellow-600 text-l md:text-xl">PROCESSOR:
+                <span class="text-white text-sm md:text-l pb-4 ">Intel Core 2 Duo @ 2.4 GHZ or <br>AMD Athlon X2 @ 2.8 GHZ
+                </span>
+              </div>
+            </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-500 py-2 px-5"><div class="flex flex-col text-yellow-600 text-l md:text-xl">mEMORY:
+                <span class="text-white text-sm md:text-l pb-4 ">4 GB RAM
+                </span>
+              </div>
+            </td>
+            <td class="border border-slate-500 py-2 px-5"><div class="flex flex-col text-yellow-600 text-l md:text-xl">storage:
+              <span class="text-white text-sm md:text-l pb-4 ">8 GB available space
+              </span>
+            </div>
+          </td>
+            </tr>
+            <tr >
+              <td colspan="2" class="border border-slate-700 py-2 px-5">
+                <div class="flex flex-col text-yellow-600 text-l md:text-xl">GRAPHICS:
+                  <span class="text-white text-sm md:text-l ">NVIDIA GeForce GTX 660 2GB or <br>
+                    AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)                  
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Top Scores section-->
+    <section class="top-score" id="quotes-page">
+      <!-- left content section -->
+      <div class="flex flex-col md:flex-row md:justify-between md:px-24 md:pt-6 relative">
+      <div class="text-center md:text-left p-4 md:flex md:items-center">
+        <div class="md:flex md:flex-col md:text-justify">
+          <h2 class="text-white text-2xl md:text-6xl">TOP SCORES</h2>
+        <p class="text-white text-sm mt-4 md:text-xl">This top score from various games provided <br> on this platform</p>
+        <button class="text-black bg-yellow-400 shadow-lg shadow-yellow-400/50 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-sm w-30 md:w-48 px-2.5 md:px-5 py-2.5 px-10 text-center my-3">see more</button>
+        </div>
+      </div>
+      <!-- right content section -->
+      <ul class="space-y-2 px-2 mx-6 relative">
+        <li class="text-sm leading-6">
+          <figure class="relative flex flex-col bg-slate-50 rounded-lg p-6 bg-slate-800 ">
+            <figcaption class="flex items-center space-x-4">
+              <img src="./assets/user1.png" alt="user 1" class="flex-none w-14 h-14 rounded-full object-cover shadow-bg" loading="lazy">
+              <div class="flex-auto">
+                <div class="text-base text-yellow-500 font-semibold">
+                  <span class="absolute inset-0 tracking-widest leading-7"></span>Evan Lahti</div>
+                <div class="text-slate-400 leading-5">PC Gamer</div></div>
+                <img src="./assets/twitter.svg" alt="twitter">
+            </figcaption>
+            <blockquote class="mt-6 text-slate-200 md:pr-32">
+              “One of my gaming highlights of the year.”
+            </blockquote>
+            <blockquote class="mt-4 text-slate-500">
+              June 18, 2021
+            </blockquote>
+          </figure>
+        </li>
+        <li class="text-sm leading-6 position-card">
+          <figure class="relative flex flex-col bg-slate-50 rounded-lg p-6 bg-slate-800 ">
+            <figcaption class="flex items-center space-x-4">
+              <img src="./assets/user2.jpg" alt="user 2" class="flex-none w-14 h-14 rounded-full object-cover shadow-bg" loading="lazy">
+              <div class="flex-auto">
+                <div class="text-base text-yellow-500 font-semibold">
+                  <span class="absolute inset-0 tracking-widest leading-7"></span>Jada Griffin</div>
+                <div class="text-slate-400 leading-5">Nerdreactor</div></div>
+                <img src="./assets/twitter.svg" alt="twitter">
+            </figcaption>
+            <blockquote class="mt-6 text-slate-200">
+              “The next big thing in the world of streaming and survival games.”
+            </blockquote>
+            <blockquote class="mt-4 text-slate-500">
+              December 24, 2018
+            </blockquote>
+          </figure>
+        </li>
+        <li class="text-sm leading-6 pb-6 position-card2">
+          <figure class="relative flex flex-col bg-slate-50 rounded-lg p-6 bg-slate-800 ">
+            <figcaption class="flex items-center space-x-4">
+              <img src="./assets/user3.jpg" alt="user 3" class="flex-none w-14 h-14 rounded-full object-cover shadow-bg" loading="lazy">
+              <div class="flex-auto">
+                <div class="text-base text-yellow-500 font-semibold">
+                  <span class="absolute inset-0 tracking-widest leading-7"></span>Aaron Williams</div>
+                <div class="text-slate-400 leading-5">Uproxx</div></div>
+                <img src="./assets/twitter.svg" alt="twitter">
+            </figcaption>
+            <blockquote class="mt-6 text-slate-200">
+              “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+            </blockquote>
+            <blockquote class="mt-4 text-slate-500">
+              December 24, 2018
+            </blockquote>
+          </figure>
+        </li>
+      </ul>
+    </div>
+      </section>
+      <!-- footer section -->
+    <section class="footer-section relative lg:px-20">
+      <!-- top wrapper -->
+      <div class="flex justify-center flex-col md:flex-row px-8 md:px-32">
+          <!-- skull image -->
+        <img class="hidden lg:block lg:mx-5 lg:mb-32" src="./assets/skull.png" alt="skull image">
+        <!-- right content -->
+        <div class="flex flex-col">
+            <h3 class="text-slate-400 text-sm md:text-xl">Want to stay in <br>touch?</h3>
+            <h2 class="uppercase text-white text-xl md:text-6xl py-2 md:py-10">newsletter <br>SUBSCRIBE</h2>
+            <p class="text-justify lg:text-left text-white md:text-xl lg:pr-20">In order to start receiving our news, all you have to do is enter your email
+              address. Everything else will be taken care of by us. 
+              We will send you emails containing information about game. We don’t spam.</p>
+            <!-- email wrapper -->
+            <div class="flex justify-center md:justify-start items-end my-5">
+              <!-- input group -->
+              <form class="mt-8 space-y-6 border rounded-md border-current" action="#" method="POST">
+                    <div class="input-control flex flex-col">
+                      <span class="inline-flex items-center px-3 text-sm md:text-l text-slate-400  ">
+                        Your email address
+                      </span>
+                      <input id="website-admin" class="text-white block flex-1 min-w-0 w-full text-sm md:text-xl p-2.5 lg:mr-60 focus:ring-blue-500 focus:border-blue-500" placeholder="youremail@binar.co.id">
+                    </div>
+              </form>
+              <button class="text-black bg-yellow-400 shadow-lg shadow-yellow-400/50 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-200 font-bold text-sm md:text-l w-15 h-16 rounded-lg md:w-52 px-1 lg:px-10 py-1 text-center mx-3">Subscribe now</button>
+            </div>
+      </div>
+      </div>
+      <!-- linked footer -->
+      <div class="text-white p-6 lg:flex lg:justify-end lg:items-center lg:gap-5">
+        <ul class="flex flex-wrap gap-2 lg:gap-12 justify-center font-bold">
+          <li class="uppercase text-sm px-2 text-slate-100 hover:text-yellow-400"><a href="#main-page">MAIN</a></li>
+          <li class="uppercase text-sm px-2 text-slate-100 hover:text-yellow-400"><a href="#game-option">about</a></li>
+          <li class="uppercase text-sm px-2 text-slate-100 hover:text-yellow-400"><a href="#feature-page">game features</a></li>
+          <li class="uppercase text-sm px-2 text-slate-100 hover:text-yellow-400"><a href="#requirement-page">System requirements</a></li>
+          <li class="uppercase text-sm px-2 text-slate-100 hover:text-yellow-400"><a href="#quotes-page">quotes</a></li>
+        </ul>
+        <!-- social media -->
+        <div class="flex my-3 justify-center items-center gap-5 lg:gap-12 lg:pl-8">
+          <a  href="https://facebook.com"><img src="./assets/facebook.svg" alt="facebook"></a>
+          <a href="https://twitter.com"><img src="./assets/twitter-footer.svg" alt="twitter"></a>
+          <a href="https://youtube.com"><img src="./assets/youtube.svg" alt="youtube"></a>
+          <a href="https://twitch.com"><img src="./assets/twitch.svg" alt="twitch"></a>
+        </div>
+        
+      </div>
+      <hr>
+      <div class="flex flex-col md:flex-row md:justify-between mx-5 gap-2 py-2">
+        <div class="text-slate-500">© 2018 Your Games, Inc. All Rights Reserved</div>
+        <div class="flex text-slate-200 gap-x-2">
+          <a href="https://www.binaracademy.com/">Privacy Policy </a> <span>|</span>
+          <a href="https://www.binaracademy.com/">Terms of Services</a><span>|</span>
+          <a href="https://www.binaracademy.com/">Code of Conduct</a>
+        </div>
+      </div>
+
+      </section>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./carousel.js"></script>
+</html>

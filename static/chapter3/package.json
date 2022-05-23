@@ -1,0 +1,19 @@
+{
+  "name": "augyeris",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masegy/chapter3.git"
+  },
+  "author": "augyeris lioga seandrio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masegy/chapter3/issues"
+  },
+  "homepage": "https://github.com/masegy/chapter3#readme"
+}
